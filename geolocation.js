@@ -3,12 +3,12 @@ let para = document.querySelector('p');
 let button = document.querySelector('button');
 
 
-function getLocation() {
+function knowLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
   }
   else {
-    para.innerHTML = '<p> Geolocation is not supported. Booo! :( ';
+    para.innerHTML = '<p> Geolocation isnt supported. :( ';
   }
 }
 
@@ -17,4 +17,4 @@ function showPosition(position) {
     ' and longitude is ' + position.coords.longitude + '</p>';
 }
 
-button.onclick = getLocation;
+button.onclick = knowLocation;
