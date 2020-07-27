@@ -1,5 +1,5 @@
 //
-var buttonlast = document.querySelector('.button')
+var buttonlast = document.getElementById('button')
 var inputValue = document.querySelector('.inputValue')
 var name = document.querySelector('.name');
 var desc = document.querySelector('.desc');
@@ -15,8 +15,8 @@ buttonlast.addEventListener('click', function () {
             var descValue = data['weather'][0]['description'];
 
             name.innerHTML = nameValue;
-            temp.innerHTML = tempValue;
-            desc.innerHTML = descValue;
+            temp.innerHTML = 'Temperature-: ' + parseInt(tempValue - 273.15);
+            desc.innerHTML = 'Description-: ' + descValue;
         })
 
         .catch(err => alert("Please fill Correct Name!"))

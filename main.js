@@ -7,7 +7,7 @@ function newListItem() {
     tickBox.setAttribute('class', 'tick');
     tickBox.addEventListener('click', playSound);
     li.appendChild(tickBox);
-    
+
 
     //creaiing a delete btn
     let delBtn = document.createElement('button');

@@ -1,4 +1,9 @@
 
+body{
+	background-image: url('https://i.chzbgr.com/full/6972493568/hBF7813FF/how-to-lower-your-blood-pressure-and-increase-happiness-with-one-gif');
+	background-repeat: repeat-x;
+}
+
 .location{
 	margin-top: 5px;
 	margin-top: 5px;
@@ -35,8 +40,7 @@ input[type="text"]{
 	margin-left: 5px;
 	border-radius: 2px;
 }
-
-#btn,.button,.btn1{
+.btn1{
 	
 	border-radius:8px;
 	border: 2px solid #E1175A;
@@ -98,4 +102,34 @@ ol{
   left: 50%;
   top: 5%;
   margin-left: -600px; 
+}
+
+p{
+	display: inline;
+	padding-left: 5px;
+}
+
+.del, .btn1{
+	border: 1px solid rgb(173, 20, 97);
+	background-color: transparent;
+	padding:3px;
+	border-radius: 4px;
+}
+
+.del:hover{
+	background-color: teal;
+}
+
+.para p{
+	float:right;
+	padding:10px;
+	font-family: cursive;
+	font-weight: 700;
+
+}
+ 
+.display p{
+	display:block;
+	font-weight: bold;
+	color:rgb(67, 80, 197);
 }
